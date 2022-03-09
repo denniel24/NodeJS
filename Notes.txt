@@ -1,0 +1,43 @@
+Node - Javascript runtime used to execute code outside of the browser
+
+Express - Library that runs in the Node JS runtime. Has helpers to make dealing with HTTP traffic easier
+
+
+How to deploy our application
+Heroku.com / AWS
+Deloyment checklist
+Dynamic Port Binding - Heroku tells us which port our app will use, so we need to make sure we listen to the port they tell us to
+Specific Node Environment - We want to use a specific version of node and npm, so we need to tell Heroku which version we want
+Specify start script - Instruct Heroku what command to run to start our server running
+Create .gitignore file - We don't want to include dependencies, Heroku will do that for us
+
+
+First Time Deployment
+1. Create Heroku account
+2. Commit our codebase to git
+3. Install Heroku CLI and Create App
+4. Deploy App with Git
+5. Heroku deploys project
+    - heroku -v
+    - heroku login
+    - heroku create
+    - git remote add heroku https://git.heroku.com/whispering-reaches-15916.git
+    - git push heroku master
+    - heroku open
+
+
+Subsequent Deploy
+1. Commit codebase with git
+    - git add.
+    - git commit -m "changed something"
+    - git push heroku master
+2. Deploy App with Git
+
+
+// install nodemon
+npm intall --save nodemon
+// run nodemon dev
+npm run dev
+
+
+
